@@ -106,7 +106,7 @@ header{
 
 .portfolio img, .certificate img, .contact img{
     border-radius: 12px;
-    margin-bottom:12px;
+    margin-bottom:30px;
 }
 
 .portfolio img:hover, .certificate img:hover, .contact img:hover{
