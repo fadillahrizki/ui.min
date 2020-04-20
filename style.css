@@ -1,0 +1,178 @@
+:root{
+    --primary-color:#50D890;
+    --secondary-color:#272727;
+}
+
+body{
+    background-color: var(--secondary-color);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow-x: hidden;
+}
+
+/* header */
+
+header{
+    position: absolute;
+    top:0;
+    margin:0;
+}
+
+/* Jumbotron */
+
+.jumbotron{
+    background-color: var(--secondary-color);
+    border-radius: 0;
+    min-height: 90vh;
+    color:var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    text-align: center;
+}
+
+.jumbotron h2{
+    font-size: 100px;
+    font-weight: bold;
+    letter-spacing: 24px;
+}
+
+.jumbotron p {
+    font-size: 50px;
+    text-transform: capitalize;
+}
+
+.jumbotron p span{
+    font-weight: bold;
+}
+
+.jumbotron svg {
+    margin:50px 0;
+}
+
+.jumbotron .socmed a{
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+.jumbotron .socmed a:hover{
+    text-shadow: 0 0 6px var(--primary-color);
+}
+
+.jumbotron .socmed i {
+    font-size: 30px;
+    margin:0 30px;
+}
+
+/* Services */
+
+.services{
+    transform: translateY(-80px);
+}
+
+.services .row{
+    background:var(--primary-color);
+    border-radius: 24px;
+    display:flex;
+    justify-content: space-between;
+    padding:50px;
+    text-align: center;
+}
+
+.services svg{
+    width:100%;
+    font-size: 100px;
+}
+
+.services h2{
+    font-size:16px;
+    font-weight: bold;
+    margin-top: 12px;
+}
+
+/* Portfolio , Certificate , Contact */
+
+.portfolio h2, .certificate h2, .contact h2{
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color:var(--primary-color);
+    text-align: center;
+    margin:50px 0;
+}
+
+.portfolio img, .certificate img, .contact img{
+    border-radius: 12px;
+    margin-bottom:12px;
+}
+
+.portfolio img:hover, .certificate img:hover, .contact img:hover{
+    box-shadow: 0 0 6px var(--primary-color);
+}
+
+.portfolio button{
+    background:var(--primary-color);
+    color:var(--secondary-color);
+    border:none;
+}
+
+.portfolio button:hover{
+    background:var(--secondary-color);
+    color:var(--primary-color);
+    border:1px solid var(--primary-color);
+}
+
+.contact {
+    background:var(--primary-color);
+    padding-bottom:50px;
+}
+
+.contact h2{
+    color:var(--secondary-color);
+}
+
+.contact img:hover{
+    box-shadow: 0 0 6px var(--secondary-color);
+}
+
+.contact h4{
+    margin:24px 0;
+}
+
+.contact h4 i{
+    margin-right: 16px;
+}
+
+
+/* footer */
+
+
+footer{
+    border-top: 1px solid var(--secondary-color);
+    width:100%;
+    text-align: center;
+    background: var(--primary-color);
+    color:var(--secondary-color);
+    padding:24px 0;
+}
+
+footer p{
+    font-size: 16px;
+}
+
+/* Responsive */
+
+@media(max-width:500px){
+    .jumbotron h2{
+        font-size: 80px;
+    }
+    .jumbotron p{
+        font-size: 30px;
+    }
+    .services h2{
+        font-size: 12px;
+    }
+    .portfolio h2, .certificate h2, .contact h2{
+        font-size: 20px;
+    }
+}
